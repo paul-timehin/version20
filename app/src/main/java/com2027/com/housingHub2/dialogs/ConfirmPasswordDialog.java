@@ -27,18 +27,19 @@ public class ConfirmPasswordDialog extends DialogFragment {
     OnConfirmPasswordListener mOnConfirmPasswordListener;
 
 
-    //vars
+    //variable for the password
     TextView mPassword;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.dialog_confirm_password, container, false);
+        // the password for the user
         mPassword = (TextView) view.findViewById(R.id.confirm_password);
 
         Log.d(TAG, "onCreateView: started.");
 
-
+        // creates a pop up confirmation box for the user to confirm their password
         TextView confirmDialog = (TextView) view.findViewById(R.id.dialogConfirm);
         confirmDialog.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -67,6 +67,7 @@ public class HomeActivity extends AppCompatActivity implements
         mFrameLayout = (FrameLayout) findViewById(R.id.container);
         mRelativeLayout = (RelativeLayout) findViewById(R.id.relLayoutParent);
 
+        // calls a public method that initialises Firebase 
         setupFirebaseAuth();
 
         initImageLoader();

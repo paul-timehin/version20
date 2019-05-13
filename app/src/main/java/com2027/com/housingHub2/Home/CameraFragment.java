@@ -19,6 +19,7 @@ public class CameraFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // Creates a fragment for the user to take images of their house
         View view = inflater.inflate(R.layout.fragment_camera, container, false);
 
         return view;
